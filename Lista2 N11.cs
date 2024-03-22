@@ -17,7 +17,7 @@ processamento).*/
             char letra;
             Console.WriteLine("Digite uma letra do alfabeto");
             letra = char.Parse(Console.ReadLine());
-            switch(char.ToLower(letra))
+            switch(letra)
             {
                 case 'a':
                     Console.WriteLine("A letra é uma vogal");
