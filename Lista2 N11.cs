@@ -10,14 +10,15 @@ namespace N11
     {
         static void Main(string[] args)
         {
-            /*Escreva um programa, usando o comando SWITCH, que leia uma letra e informe se a letra é uma vogal
-ou consoante. Considere que o usuário sempre irá informar uma letra. (Dica: não será necessário informar
-diretamente no código todas as 26 letras. Pense em uma forma mais inteligente de fazer esse
-processamento).*/
-            char letra;
+           char letra;
             Console.WriteLine("Digite uma letra do alfabeto");
             letra = char.Parse(Console.ReadLine());
-            switch(letra)
+            int n = (int)letra;
+            if(n >= 65 && n <= 90)
+            {
+                letra = (char)(letra + 32);
+            }
+            switch (letra)
             {
                 case 'a':
                     Console.WriteLine("A letra é uma vogal");
@@ -38,7 +39,7 @@ processamento).*/
                     Console.WriteLine("A letra é uma consoante");
                     break;
             }
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
     }
 }
