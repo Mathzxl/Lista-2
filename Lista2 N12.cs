@@ -21,7 +21,6 @@ utilizando as seguintes fórmulas:
             Console.WriteLine("Digite o sexo de uma Pessoa (F) Feminino (M) Masculino");
             sexo = char.Parse(Console.ReadLine());
             pesoIdeal = sexo == 'M' ? (72.7 * h) - 58 : (62.1 * h) - 44.7;
-            string genero = sexo == 'M' ? "homem" : "mulher";
             Console.WriteLine("O peso ideal para um " + genero + " com " + h + " metros de altura é: " + pesoIdeal + "kg");
             Console.ReadLine();
         }
