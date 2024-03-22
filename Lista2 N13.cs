@@ -16,7 +16,7 @@ não por 100.
 Exemplos de anos bissextos: 2000, 2004, 2040*/
             Console.WriteLine("Digite um ano:");
             int ano = int.Parse(Console.ReadLine());
-            string mensagem = ((ano % 400 == 0) || ((ano % 4 == 0) && (ano % 100 != 0))) ? "O ano é bissexto." : "O ano não é bissexto.";
+            Console.WriteLine(((ano % 400 == 0) || ((ano % 4 == 0) && (ano % 100 != 0))) ? "O ano é bissexto." : "O ano não é bissexto.");
             Console.WriteLine(mensagem);
             Console.ReadLine(); 
         }
